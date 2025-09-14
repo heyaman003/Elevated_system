@@ -7,7 +7,7 @@ import type {
   ElevatorRequest,
 } from '../types/elevator.types';
 
-@Controller('api/elevator')
+@Controller('/elevator')
 export class ElevatorController {
   constructor(
     private readonly elevatorService: ElevatorService,

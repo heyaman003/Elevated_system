@@ -4,7 +4,7 @@ import type {
   ElevatorRequest,
 } from "../types/elevator.types";
 
-const API_BASE_URL = "http://localhost:3001/api/elevator";
+const API_BASE_URL = "/api/elevator";
 
 export class ApiService {
   async getSystemState(): Promise<ElevatorSystemState> {
