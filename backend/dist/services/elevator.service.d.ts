@@ -1,0 +1,31 @@
+import { ElevatorRequest, SimulationConfig, ElevatorSystemState } from '../types/elevator.types';
+import { SchedulerService } from './scheduler.service';
+export declare class ElevatorService {
+    private schedulerService;
+    private elevators;
+    private floors;
+    private requests;
+    private config;
+    private metrics;
+    private isRunning;
+    private simulationInterval;
+    constructor(schedulerService: SchedulerService);
+    private initializeSystem;
+    resetSystem(): void;
+    updateConfig(newConfig: Partial<SimulationConfig>): void;
+    startSimulation(): void;
+    stopSimulation(): void;
+    private updateSimulation;
+    private generateRandomRequests;
+    private generateRandomRequest;
+    private calculateRequestPriority;
+    private updateElevators;
+    private updateElevatorState;
+    private updateDoorState;
+    private moveElevator;
+    private handleElevatorArrival;
+    private assignRequestsToElevator;
+    private updateMetrics;
+    getSystemState(): ElevatorSystemState;
+    addRequest(originFloor: number, destinationFloor: number): ElevatorRequest;
+}

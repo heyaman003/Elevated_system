@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+#app {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.elevator-shaft {
+  background: linear-gradient(to bottom, #1f2937, #374151);
+  border: 2px solid #4b5563;
+}
+
+.elevator-car {
+  transition: transform 0.5s ease-in-out;
+  border: 2px solid #6b7280;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+.elevator-door {
+  transition: width 0.3s ease-in-out;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+.floor-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.floor-button:hover {
+  transform: scale(1.1);
+}
+
+.floor-button.active {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.elevator-indicator {
+  transition: all 0.3s ease-in-out;
+}
+
+.control-panel {
+  background: linear-gradient(135deg, #1f2937, #374151);
+  border: 2px solid #4b5563;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
