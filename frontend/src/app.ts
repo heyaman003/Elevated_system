@@ -24,8 +24,8 @@ export class ElevatorSimulationApp {
       () => this.handleReset(),
     );
 
-    this.elevatorShaft = new ElevatorShaft((floor, direction) =>
-      this.handleFloorButtonClick(floor, direction),
+    this.elevatorShaft = new ElevatorShaft((floor) =>
+      this.handleFloorButtonClick(floor),
     );
 
     this.metricsPanel = new MetricsPanel();
@@ -164,7 +164,7 @@ export class ElevatorSimulationApp {
 
   private async handleFloorButtonClick(
     floor: number,
-    direction: "up" | "down",
+    // direction: "up" | "down",
   ): Promise<void> {
     try {
       // For now, we'll create a request to a random destination floor
