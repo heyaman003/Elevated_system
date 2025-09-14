@@ -42,10 +42,6 @@ export class ElevatorSimulationApp {
       // Add header
       const header = document.createElement("header");
       header.className = "text-center mb-8";
-      header.innerHTML = `
-        <h1 class="text-4xl font-bold text-white mb-2">Elevator System Simulation</h1>
-        <p class="text-gray-400">Intelligent scheduling algorithm with real-time optimization</p>
-      `;
       this.appElement.appendChild(header);
 
       // Add control panel
