@@ -41,7 +41,6 @@ export class ElevatorSimulationApp {
 
       // Add header
       const header = document.createElement("header");
-      header.className = "text-center mb-8";
       this.appElement.appendChild(header);
 
       // Add control panel
